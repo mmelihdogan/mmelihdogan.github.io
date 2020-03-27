@@ -1,0 +1,30 @@
+.About {
+    /* text-align: center; */
+      /* background: url("./bharath-g-s-aLGiPJ4XRO4-unsplash.jpg") no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      filter: grayscale(20%); */
+    
+      /* background-color: whitesmoke; */
+      background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+      /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(1,150,21,1) 0%, rgba(198,239,146,1) 90% ); */
+      min-height: 100vh;
+      /* display: flex;
+      flex-direction: column; */
+      align-items: center;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+      padding: 1rem;
+  }
+
+  .row {
+    margin-left: 15rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+  }
+
