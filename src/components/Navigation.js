@@ -19,11 +19,7 @@ class Navigation extends React.Component  {
     render()
     {    return (
         <Nav className="navbar">
-            <Nav className="navbar-nav">
-                <Nav.Item className="arrow nav-item">
-                        <FontAwesomeIcon className="svg" id="arrow" icon={faMap} />
-                </Nav.Item>
-                
+            <Nav className="navbar-nav">    
                 {this.state.pages.map(page => {
                     return (
                         <Nav.Item className="nav-item">
