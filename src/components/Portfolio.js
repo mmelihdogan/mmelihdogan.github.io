@@ -1,11 +1,11 @@
 import React from 'react';
 import { Container, Card, CardDeck, Button } from 'react-bootstrap';
 import './About.css';
-import mf1 from './moviefun1.png';
-import mf2 from './moviefun2.png';
-import me1 from './movieexplorer1.png';
-import cs1 from './coming soon.png';
-import cs2 from './coming soon 2.png';
+import mf1 from './materials/moviefun1.png';
+import mf2 from './materials/moviefun2.png';
+import me1 from './materials/movieexplorer1.png';
+import cs1 from './materials/coming soon.png';
+import cs2 from './materials/coming soon 2.png';
 
 
 import { faLink } from "@fortawesome/free-solid-svg-icons";

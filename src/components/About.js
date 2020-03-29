@@ -5,9 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Container, Col, Row, Image, Button } from 'react-bootstrap';
 import '../App.css';
-import Navigation from './Navigation';
-import image from './whocares.gif';
-import resume from './melihdogan.pdf'
+import image from './materials/whocares.gif';
+import resume from './materials/melihdogan.pdf'
 
 
 import Fade from 'react-reveal/Fade';

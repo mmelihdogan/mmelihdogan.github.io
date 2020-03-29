@@ -23,15 +23,14 @@
 .nav-link {
     display: flex;
     align-items: center;
-    color: black;
+    color: white;
     text-decoration: none;
-    filter: grayscale(20%) opacity(0.8);
     transition: 200ms;
 }
 
 .nav-link:hover {
     filter: grayscale(0%) opacity(0.5);
-    color: black;
+    color: whitesmoke;
 }
 
 .link-text {
@@ -42,7 +41,7 @@
 .navbar:hover .link-text {
     display: block;
     margin-left: 0.6rem;
-    color: black;
+    color: white;
 }
 
 
