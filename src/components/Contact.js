@@ -1,9 +1,9 @@
 import React from 'react';
-import './Contact.css';
+import '../App.css';
 import { Button, Container, Alert, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
 
 
 class Contact extends React.Component  {
@@ -45,7 +45,7 @@ class Contact extends React.Component  {
 
     if (this.state.name !== "") {
       formDetails = (
-        <Fade top>
+        <Flip left>
         <p>Nice to meet you! 👋</p>
         <Form onSubmit={this.handleSubmit}>
         <Form.Group>
@@ -60,7 +60,7 @@ class Contact extends React.Component  {
       {this.state.emailSent === true && <p className="d-inline success-msg">Email Sent</p>}
       {this.state.emailSent === false && <p className="d-inline err-msg">Email Not Sent</p>}
         </Form>
-        </Fade>                 
+        </Flip>                 
          )
     }
     
@@ -68,7 +68,7 @@ class Contact extends React.Component  {
 
       <>
         <Container fluid className="Contact">
-                   <h1 className="melih py-5">Hello {this.state.name === "" ? '👋' : this.state.name + "!" }</h1>
+                   <h1 className="hello">Hello {this.state.name === "" ? '👋' : this.state.name + "!" }</h1>
                     <Form>
                         <Form.Group onSubmit={this.handleNameSubmit}>
                             <Form.Label>What's your name?</Form.Label>

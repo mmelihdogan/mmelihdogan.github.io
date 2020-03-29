@@ -3,16 +3,16 @@ import './Navigation.css';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { faHome, faCat, faFile, faChevronRight, faMap } from "@fortawesome/free-solid-svg-icons";
+import { faIgloo, faCat, faPaw, faDove } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Navigation extends React.Component  {
     state = {
         pages: [
+            {name: "Home", path:"/", icon: faIgloo},
             {name: "About Me!", path:"/about", icon: faCat},
-            {name: "Resume", path:"/resume", icon: faHome},
-            {name: "Portfolio", path:"/portfolio", icon: faHome},
-            {name: "Contact", path:"/contact", icon: faHome},
+            {name: "Portfolio", path:"/portfolio", icon: faPaw},
+            {name: "Contact", path:"/contact", icon: faDove},
         ]
     }
 
@@ -32,8 +32,6 @@ class Navigation extends React.Component  {
                 })}
             </Nav>
         </Nav>
-
-        
     )
 }}
 
