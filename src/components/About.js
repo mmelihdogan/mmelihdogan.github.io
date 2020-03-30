@@ -8,7 +8,7 @@ import '../App.css';
 import image from './materials/whocares.gif';
 import resume from './materials/melihdogan.pdf'
 
-
+import Navigation from './Navigation';
 import Fade from 'react-reveal/Fade';
 
 export default class About extends React.Component {
@@ -19,9 +19,11 @@ export default class About extends React.Component {
         link.download = 'melihdogan.pdf';
         link.dispatchEvent(new MouseEvent('click'));
     }
+
     render() {
         return (
             <>
+                <Navigation path="/about" />
                 <Container fluid className="About">
                     <Container>
                         <Fade top>

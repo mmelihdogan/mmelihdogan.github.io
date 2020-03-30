@@ -10,6 +10,7 @@ import cs2 from './materials/coming soon 2.png';
 
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Navigation from './Navigation';
 
 
 export default class Portfolio extends React.Component {
@@ -48,6 +49,8 @@ export default class Portfolio extends React.Component {
   render() {
 
     return (
+      <>
+      <Navigation path="/portfolio" />
       <Container fluid className="About">
         <Container md={12}>
           <CardDeck>
@@ -69,7 +72,7 @@ export default class Portfolio extends React.Component {
           </CardDeck>
         </Container>
       </Container>
-
+      </>
     )
   }
 }

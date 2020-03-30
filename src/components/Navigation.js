@@ -23,7 +23,7 @@ class Navigation extends React.Component  {
                 {this.state.pages.map(page => {
                     return (
                         <Nav.Item className="nav-item">
-                            <Nav.Link href={page.path} className="btn btn-2">
+                            <Nav.Link href={page.path} className={`${page.path !== this.props.path ? "btn btn-2" : "btn btn-2 disabled"}`}>
                                 <FontAwesomeIcon className="svg" icon={page.icon} />
                                 <span className="link-text">{page.name}</span>
                             </Nav.Link>
