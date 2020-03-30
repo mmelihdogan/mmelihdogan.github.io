@@ -13,7 +13,7 @@ class Home extends React.Component {
                 <Container fluid className="Home">
                     <Container className="melih">
                         <h1>melih ;D</h1>
-                        <p>Apprentice Web Developer</p>
+                        <p>Apprentice Web Developer and Cat Lover</p>
                     </Container>
                 </Container >
             </>
