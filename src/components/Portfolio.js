@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Card, CardDeck, Button } from 'react-bootstrap';
-import '../App.css';
+import '../styles/App.css';
 import mf1 from './materials/moviefun1.png';
 import mf2 from './materials/moviefun2.png';
 import me1 from './materials/movieexplorer1.png';
@@ -50,28 +50,28 @@ export default class Portfolio extends React.Component {
 
     return (
       <>
-      <Navigation path="/portfolio" />
-      <Container fluid className="About">
-        <Container md={12}>
-          <CardDeck>
-            {this.state.portfolios.map((project) => {
-              return (
-                <Card>
-                  <Card.Header>{project.name}</Card.Header>
-                  <Card.Img variant="top" src={!this.state.showSecondImg ? project.image[0] : project.image[1]} onClick={this.clickHandler} />
-                  <Card.Body>
-                    <Card.Title></Card.Title>
-                    <Card.Text>{project.text}</Card.Text>
-                  </Card.Body>
-                  <Card.Footer>
-                    <Button variant="light" target="_blank" href={project.github}><FontAwesomeIcon icon={faLink} /> Github Repo </Button>
-                  </Card.Footer>
-                </Card>
-              )
-            })}
-          </CardDeck>
+        <Navigation path="/portfolio" />
+        <Container fluid className="About">
+          <Container md={12}>
+            <CardDeck>
+              {this.state.portfolios.map((project) => {
+                return (
+                  <Card>
+                    <Card.Header>{project.name}</Card.Header>
+                    <Card.Img variant="top" src={!this.state.showSecondImg ? project.image[0] : project.image[1]} onClick={this.clickHandler} />
+                    <Card.Body>
+                      <Card.Title></Card.Title>
+                      <Card.Text>{project.text}</Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                      <Button variant="light" target="_blank" href={project.github}><FontAwesomeIcon icon={faLink} /> Github Repo </Button>
+                    </Card.Footer>
+                  </Card>
+                )
+              })}
+            </CardDeck>
+          </Container>
         </Container>
-      </Container>
       </>
     )
   }

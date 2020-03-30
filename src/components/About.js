@@ -4,7 +4,7 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Container, Col, Row, Image, Button } from 'react-bootstrap';
-import '../App.css';
+import '../styles/App.css';
 import image from './materials/whocares.gif';
 import resume from './materials/melihdogan.pdf'
 

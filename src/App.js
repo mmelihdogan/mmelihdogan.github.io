@@ -16,14 +16,14 @@ import Slide from 'react-reveal/Slide';
 function App() {
   return (
     <Slide left>
-    <Router>
-      <Switch>
-      <Route path="/" exact component={Home} />
-      <Route path="/about" exact component={About} />
-      <Route path="/portfolio" exact component={Portfolio} />
-      <Route path="/contact" exact component={Contact} />
-      </Switch>
-    </Router>
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" exact component={About} />
+          <Route path="/portfolio" exact component={Portfolio} />
+          <Route path="/contact" exact component={Contact} />
+        </Switch>
+      </Router>
     </Slide>
   );
 }
