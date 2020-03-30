@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Card, CardDeck, Button } from 'react-bootstrap';
-import './About.css';
+import '../App.css';
 import mf1 from './materials/moviefun1.png';
 import mf2 from './materials/moviefun2.png';
 import me1 from './materials/movieexplorer1.png';
@@ -64,7 +64,7 @@ export default class Portfolio extends React.Component {
                     <Card.Text>{project.text}</Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <Button variant="light" href={project.github}><FontAwesomeIcon icon={faLink} /> Github Repo </Button>
+                    <Button variant="light" target="_blank" href={project.github}><FontAwesomeIcon icon={faLink} /> Github Repo </Button>
                   </Card.Footer>
                 </Card>
               )
