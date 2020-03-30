@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/mmelihdogan/myportfolio/static/css/main.58fff49c.chunk.css",
+    "main.js": "/mmelihdogan/myportfolio/static/js/main.e9efd326.chunk.js",
+    "main.js.map": "/mmelihdogan/myportfolio/static/js/main.e9efd326.chunk.js.map",
+    "runtime-main.js": "/mmelihdogan/myportfolio/static/js/runtime-main.9dee49c9.js",
+    "runtime-main.js.map": "/mmelihdogan/myportfolio/static/js/runtime-main.9dee49c9.js.map",
+    "static/css/2.de424728.chunk.css": "/mmelihdogan/myportfolio/static/css/2.de424728.chunk.css",
+    "static/js/2.7bf88b61.chunk.js": "/mmelihdogan/myportfolio/static/js/2.7bf88b61.chunk.js",
+    "static/js/2.7bf88b61.chunk.js.map": "/mmelihdogan/myportfolio/static/js/2.7bf88b61.chunk.js.map",
+    "index.html": "/mmelihdogan/myportfolio/index.html",
+    "precache-manifest.a6249113cfe0fe5cb30f10352d30706b.js": "/mmelihdogan/myportfolio/precache-manifest.a6249113cfe0fe5cb30f10352d30706b.js",
+    "service-worker.js": "/mmelihdogan/myportfolio/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/mmelihdogan/myportfolio/static/css/2.de424728.chunk.css.map",
+    "static/css/main.58fff49c.chunk.css.map": "/mmelihdogan/myportfolio/static/css/main.58fff49c.chunk.css.map",
+    "static/js/2.7bf88b61.chunk.js.LICENSE.txt": "/mmelihdogan/myportfolio/static/js/2.7bf88b61.chunk.js.LICENSE.txt",
+    "static/media/coming soon 2.png": "/mmelihdogan/myportfolio/static/media/coming soon 2.1e7c1e7d.png",
+    "static/media/coming soon.png": "/mmelihdogan/myportfolio/static/media/coming soon.6b0d27fa.png",
+    "static/media/melihdogan.pdf": "/mmelihdogan/myportfolio/static/media/melihdogan.9aad4ec6.pdf",
+    "static/media/movieexplorer1.png": "/mmelihdogan/myportfolio/static/media/movieexplorer1.3f058d6f.png",
+    "static/media/moviefun1.png": "/mmelihdogan/myportfolio/static/media/moviefun1.b0766173.png",
+    "static/media/moviefun2.png": "/mmelihdogan/myportfolio/static/media/moviefun2.6147f852.png",
+    "static/media/whocares.gif": "/mmelihdogan/myportfolio/static/media/whocares.3d72fddc.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9dee49c9.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.7bf88b61.chunk.js",
+    "static/css/main.58fff49c.chunk.css",
+    "static/js/main.e9efd326.chunk.js"
+  ]
+}
