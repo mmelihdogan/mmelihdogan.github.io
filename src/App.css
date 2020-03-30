@@ -21,13 +21,13 @@
 .melih h1 {
   font-size: calc(100px + 2vmin);
   padding-bottom: 2vmin;
-  font-family: 'Sniglet', cursive;
+  font-family: 'Sniglet', sans-serif;
 }
 
 .melih p {
   font-size: 4vmin;
   padding-bottom: 2vmin;
-  font-family: 'Sniglet', cursive;
+  font-family: 'Sniglet', sans-serif;
 }
 
 
@@ -58,7 +58,7 @@
   justify-content: center;
   color: white;
   font-size: 3vmin;
-  font-family: 'Sniglet', cursive;
+  font-family: 'Sniglet', sans-serif;
 }
 
 .Contact {
@@ -76,5 +76,5 @@
 .hello {
   font-size: calc(100px + 2vmin);
   padding-bottom: 3vmin;
-  font-family: 'Sniglet', cursive;
+  font-family: 'Sniglet', sans-serif;
 }
