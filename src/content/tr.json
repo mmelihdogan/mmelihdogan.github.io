@@ -1,9 +1,9 @@
 {
   "nav": {
-    "home": "Home",
-    "about": "About Me!",
-    "portfolio": "Portfolio",
-    "contact": "Contact"
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "portfolio": "Portföy",
+    "contact": "İletişim"
   },
   "home": {
     "title": "Çırak Web Geliştiricisi"
