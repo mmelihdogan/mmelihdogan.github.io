@@ -7,5 +7,11 @@
   },
   "home": {
     "title": "Çırak Web Geliştiricisi"
+  },
+  "about": {
+    "title": "Ama eğer hâlâ umursuyorsanız:",
+    "details": "Ben Melih, 22 yaşındayım. Boğaziçi Üniversitesi'nde yönetim bilişim sistemleri okuyorum. Daha sonraları üzerine pek düşmesem de programlamayla ilk olarak üniversite birinci sınıfta uğraştım. 2018'in sonunda Berlin'de bir \"hackathon\"a katılma şansı yakaladım ve kodlamayla daha fazla haşır neşir oldum. Berlin'de Re:Coded'ı ve oranın ekibini tanıma fırsatım oldu ve 2020'de Re:Coded Web Development Bootcamp'ine katıldım. Şu anda deneyimli bir Front-End Web Geliştiricisi olmayı hedefleyen tam zamanlı 3. sınıf üniversite öğrencisiyim. Tanışma yarıda kalmasın diyorsanız neden birlikte bi kahve içmiyoruz? (tabii ki Zoom'da) 🙃",
+    "download": "CV'mi indirin!"
+    
   }
 }
