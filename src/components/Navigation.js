@@ -1,16 +1,22 @@
 import React from 'react';
 import '../styles/Navigation.css';
-import { Nav } from 'react-bootstrap';
+import { Nav, Dropdown, DropdownButton } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { faIgloo, faCat, faPaw, faDove } from "@fortawesome/free-solid-svg-icons";
+import { faIgloo, faCat, faPaw, faDove, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { useTranslation } from 'react-i18next';
 
 
 function Navigation(props) {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+
+    const selectLanguage = (language) => {
+        i18n.changeLanguage(language);
+        document.documentElement.style.setProperty('--direction', 'ltr');
+        document.documentElement.style.setProperty('--align', 'left');
+    };
 
     const pages = [
         { name: t('nav.home'), path: "/", icon: faIgloo },
@@ -32,6 +38,16 @@ function Navigation(props) {
                         </Nav.Item>
                     )
                 })}
+              
+
+                <DropdownButton
+                    title={<FontAwesomeIcon icon={faGlobe} />} >
+                    <Dropdown.Item onClick={() => selectLanguage('tr')}>
+                        Türkçe </Dropdown.Item>
+                    <Dropdown.Item onClick={() => selectLanguage('en')}>
+                        English
+          </Dropdown.Item>
+                </DropdownButton>
             </Nav>
         </Nav>
     )
