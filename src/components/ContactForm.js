@@ -54,25 +54,27 @@ export default class ContactForm extends Component {
 
         emailjs.send('default_service', templateId, templateParams, userId)
             .then(function () {
-                this.showStatus(true)
+                console.log('ok');
+                // this.showStatus(true)
             }, function () {
-                this.showStatus(false)
+                console.log('oops');
+                // this.showStatus(false)
             });
     };
 
-    showStatus = (event) => {
-        this.setState({
-            status: event
-        })
-    }
+    // showStatus = (event) => {
+    //     this.setState({
+    //         status: event
+    //     })
+    // }
 
     render() {
 
         return (
             <>
                 <Navigation path="/contact" />
-                <Notify status={this.state.status} />
                 <Container fluid className="Contact">
+                    <Notify status="true" />
                     <h1 className="hello">Hello {this.state.firstName === '' ? this.state.hello : this.state.firstName + "!"}</h1>
                     <Form onSubmit={event => this.handleSubmit(event)}>
                         <Form.Row>

@@ -19,10 +19,10 @@ function Notify(props) {
         message: "There has been an error sending your message. Sorry for the inconvenience."
     });
 
-    let mainStructure = null;
 
-    if (props.status !== "") {
-        mainStructure = (
+
+    return (
+        <>
             <Toast
                 style={{
                     position: 'absolute',
@@ -37,13 +37,7 @@ function Notify(props) {
                 <Toast.Body>{props.status === "true" ? successState.message : failureState.message}</Toast.Body>
             </Toast>
 
-        )
-    }
-
-
-
-    return (
-        <>
+F
         </>
     )
 }
