@@ -8,7 +8,7 @@ import Notify from './Notify';
 export default class ContactForm extends Component {
 
     state = {
-        hello: "👋",
+        hello: "Hello 👋",
         firstName: "",
         lastName: "",
         email: "",
@@ -53,20 +53,27 @@ export default class ContactForm extends Component {
         const userId = "user_SMx3f0wRy3TTOmKOsha0B";
 
         emailjs.send('default_service', templateId, templateParams, userId)
-            .then(function () {
-                console.log('ok');
-                // this.showStatus(true)
-            }, function () {
-                console.log('oops');
-                // this.showStatus(false)
+            .then(function (response) {
+                alert("Message Sent.");
+            }, function (error) {
+                alert("Message failed to send.");
             });
+        
+            this.resetForm();
     };
 
-    // showStatus = (event) => {
-    //     this.setState({
-    //         status: event
-    //     })
-    // }
+    resetForm = () => {
+
+        this.setState({
+            hello: "Hello 👋",
+            firstName: "",
+            lastName: "",
+            email: "",
+            message: "",
+            status: true
+        })
+    }
+
 
     render() {
 
@@ -74,8 +81,8 @@ export default class ContactForm extends Component {
             <>
                 <Navigation path="/contact" />
                 <Container fluid className="Contact">
-                    <Notify status="true" />
-                    <h1 className="hello">Hello {this.state.firstName === '' ? this.state.hello : this.state.firstName + "!"}</h1>
+                    {this.state.status === true ? <Notify status="true" /> : <></>}
+                    <h1 className="hello">{this.state.firstName === '' ? this.state.hello : 'Hello ' + this.state.firstName + "!"}</h1>
                     <Form onSubmit={event => this.handleSubmit(event)}>
                         <Form.Row>
                             <Form.Group as={Col}>

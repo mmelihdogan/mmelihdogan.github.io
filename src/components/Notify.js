@@ -19,6 +19,11 @@ function Notify(props) {
         message: "There has been an error sending your message. Sorry for the inconvenience."
     });
 
+    const [closeState, setCloseState] = useState(true);
+
+
+    const handleClose = () => { setCloseState(!closeState)}
+
 
 
     return (
@@ -29,6 +34,8 @@ function Notify(props) {
                     top: 10,
                     right: 10,
                 }}
+                show={closeState}
+                onClose={handleClose}
             >
                 <Toast.Header>
                     <FontAwesomeIcon className="mr-2" icon={props.status === "true" ? successState.icon : failureState.icon} />
@@ -36,8 +43,6 @@ function Notify(props) {
                 </Toast.Header>
                 <Toast.Body>{props.status === "true" ? successState.message : failureState.message}</Toast.Body>
             </Toast>
-
-F
         </>
     )
 }
